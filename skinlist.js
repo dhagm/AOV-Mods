@@ -14,7 +14,11 @@ function bodyloaded() {
     const children = section.children;
 
     Array.from(children).forEach(a => {
-        a.style.display = "flex";
+//         if (doesFileExist(a.href)) {
+            a.style.display = "flex";
+//         } else {
+//             a.style.display = "none";
+//         }
     });
 }
 
