@@ -14,11 +14,7 @@ function bodyloaded() {
     const children = section.children;
 
     Array.from(children).forEach(a => {
-        if (doesFileExist(a.href)) {
-            a.style.display = "flex";
-        } else {
-            a.style.display = "none";
-        }
+        a.style.display = "flex";
     });
 }
 
